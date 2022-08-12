@@ -1,0 +1,43 @@
+.char-name {
+    color: #eee;
+    font-weight: bold;
+    animation: alternate;
+}
+
+.char-img {
+    border-radius: 12px;
+    border: 1px solid #eee;
+    width: 80px;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.char-img:hover {
+    animation-name: img-move;
+    animation-timing-function: ease;
+}
+
+@keyframes img-move {
+    50% {
+        border-radius: 15px;
+        border: 1.5px solid #eee;
+        width: 90px;
+    }
+    100% {
+        border-radius: 20px;
+        border: 2px solid #eee;
+        width: 100px;
+    }
+}
+
+.char-info-btn {
+    display: grid;
+    transform: rotate(30deg);
+    background-color: rgb(65, 101, 29);
+    border: 1px solid #eee;
+}
+
+.char-info-btn:hover {
+    border: 2px solid #eee;
+    background-color: rgb(41, 83, 0);
+}
