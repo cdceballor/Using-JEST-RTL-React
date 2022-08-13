@@ -1,11 +1,12 @@
 import "./App.css";
 import ListCharacters from "./components/ListCharacters";
+import Router from "./router/Router";
 
 function App() {
   return (
     <div className="App">
       <div>
-        <ListCharacters />
+        <Router />
       </div>
     </div>
   );
